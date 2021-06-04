@@ -58,9 +58,11 @@ img {
 
 h1,h3,h4 {
     text-decoration: underline;
+    font-size: xx-larger;
     font-family: 'Nanum Pen Script', cursive;
 }
-a {
+a, p {
     color: black;
+    font-size: large;
     font-family: 'Nanum Pen Script', cursive;
 }
