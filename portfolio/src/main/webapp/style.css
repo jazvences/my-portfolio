@@ -7,3 +7,52 @@
 #greeting-container {
   margin-top: 20px;
 }
+
+.btsm {
+    display: flex;
+    justify-content: center;
+}
+.twitter {
+    width: 50px;
+    margin: 3px;
+}
+
+.insta {
+    width: 50px;
+    margin: 3px;
+}
+
+.faceb {
+    width: 48px;
+    height: 48px;
+    margin: 3px;
+}
+
+img {
+    
+    border: dotted lightgrey;
+}
+
+.nav {
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+.nav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav a:hover {
+  background-color: #ffcccc;
+  color: grey;
+}
+
+.nav a.active {
+  background-color: #80ffbf;
+  color: grey;
+}
