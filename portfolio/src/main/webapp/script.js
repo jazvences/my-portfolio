@@ -26,3 +26,19 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+async function sayHello() {
+  const responseFromServer = await fetch('/hello');
+  const textFromResponse = await responseFromServer.text();
+
+  const hiContainer = document.getElementById('hi-container');
+  hiContainer.innerText = textFromResponse;
+}
+
+async function cuteMsgs() {
+  const responseFromServer = await fetch('/hello');
+  const textFromResponse = await responseFromServer.text();
+  console.log(msgs)
+  const msgsContainer = document.getElementById('msgs-container');
+  msgsContainer.innerText = textFromResponse;
+}

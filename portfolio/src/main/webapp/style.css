@@ -4,32 +4,35 @@
   width: 650px;
 }
 
+body {
+    background-image: url('https://i.gifer.com/GHSe.gif');
+}
+
 #greeting-container {
   margin-top: 20px;
 }
 
 .btsm {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .github {
-    width: 50px;
-    margin: 3px;
+  width: 50px;
+  margin: 3px;
 }
 
 .linkedin {
-    width: 50px;
-    margin: 3px;
+  width: 50px;
+  margin: 3px;
 }
 
 .gmail {
-    height: 50px;
-    margin: 3px;
+  height: 50px;
+  margin: 3px;
 }
 
 img {
-    
-    border: dotted lightgrey;
+  border: dotted lightgrey;
 }
 
 .nav {
@@ -56,11 +59,21 @@ img {
   color: grey;
 }
 
-h1,h3,h4 {
-    text-decoration: underline;
-    font-size: xx-larger;
-    font-family: 'Nanum Pen Script', cursive;
+h1 {
+  text-decoration: underline;
+  font: 'Nanum Pen Script', cursive, xx-larger;
 }
+
+h3 {
+  text-decoration: underline;
+  font: 'Nanum Pen Script', cursive, xx-larger;
+}
+
+h4 {
+  text-decoration: underline; 
+  font: 'Nanum Pen Script', cursive, xx-larger;
+}
+
 a, p {
     color: black;
     font-size: large;
