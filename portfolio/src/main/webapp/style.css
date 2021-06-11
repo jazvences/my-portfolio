@@ -7,3 +7,62 @@
 #greeting-container {
   margin-top: 20px;
 }
+
+.btsm {
+    display: flex;
+    justify-content: center;
+}
+.github {
+    width: 50px;
+    margin: 3px;
+}
+
+.linkedin {
+    width: 50px;
+    margin: 3px;
+}
+
+.gmail {
+    height: 50px;
+    margin: 3px;
+}
+
+img {
+    
+    border: dotted lightgrey;
+}
+
+.nav {
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+.nav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav a:hover {
+  background-color: #ffcccc;
+  color: grey;
+}
+
+.nav a.active {
+  background-color: #80ffbf;
+  color: grey;
+}
+
+h1,h3,h4 {
+    text-decoration: underline;
+    font-size: xx-larger;
+    font-family: 'Nanum Pen Script', cursive;
+}
+a, p {
+    color: black;
+    font-size: large;
+    font-family: 'Nanum Pen Script', cursive;
+}
