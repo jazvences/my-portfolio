@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url('https://i.gifer.com/GHSe.gif');
+  background-image: url('https://i.gifer.com/GHSe.gif');
 }
 
 #greeting-container {
@@ -16,22 +16,29 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.me {
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: dotted lightgrey;
+}
 .github {
   width: 50px;
   margin: 3px;
+  border: dotted lightgrey;
 }
 
 .linkedin {
   width: 50px;
   margin: 3px;
+  border: dotted lightgrey;
 }
 
 .gmail {
   height: 50px;
   margin: 3px;
-}
-
-img {
   border: dotted lightgrey;
 }
 
@@ -78,4 +85,43 @@ a, p {
     color: black;
     font-size: large;
     font-family: 'Nanum Pen Script', cursive;
+}
+
+#slider {
+	overflow: hidden;
+}
+
+@keyframes slider {
+	0% { left: 0; }
+	30% { left: 0; }
+	33% { left: -100%; }
+	63% { left: -100%; }
+	66% { left: -200%; }
+	95% { left: -200%; }
+	100% { left: 0; }
+}
+#slider figure {
+	width:300%;
+	position: relative;
+	animation: 9s slider infinite;
+}
+
+#slider figure:hover {
+	animation-play-state: paused;
+}
+#slider figure img {
+	width: 33.333333333%;
+	height : 100%;
+	float: left;
+}
+
+#text {
+  width: 500px;
+  height: 125px;
+}
+
+#language {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
