@@ -26,3 +26,39 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+async function sayHello() {
+  const responseFromServer = await fetch('/hello');
+  const textFromResponse = await responseFromServer.text();
+
+  const hiContainer = document.getElementById('hi-container');
+  hiContainer.innerText = textFromResponse;
+}
+
+async function showMessage() {
+  const responseFromServer = await fetch('/hello');
+  const textFromResponse = await responseFromServer.json();
+
+  const helloContainer = document.getElementById('hello-container');
+  helloContainer.innerText = textFromResponse[Math.floor(Math.random() * textFromResponse.length)];
+}
+
+function requestTranslation() {
+  const text = document.getElementById('text').value;
+  const languageCode = document.getElementById('language').value;
+
+  const resultContainer = document.getElementById('result');
+  resultContainer.innerText = 'Loading...';
+
+  const params = new URLSearchParams();
+  params.append('text', text);
+  params.append('languageCode', languageCode);
+
+  fetch('/translate', {
+    method: 'POST',
+    body: params
+    }).then(response => response.text())
+    .then((translatedMessage) => {
+    resultContainer.innerText = translatedMessage;
+    });
+  }
